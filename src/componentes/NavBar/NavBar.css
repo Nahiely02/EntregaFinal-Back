@@ -1,0 +1,31 @@
+#navbar{
+    display: flex;
+    width: 100%;
+    background-color: #f3e18e; /* Fondo del Navbar */
+}
+#navbar h1{
+    color: #343a40; /* Color del H1 */
+    font-size: 35px; /* Tamaño del H1 */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-left: 5px;
+}
+
+#navbar ul{
+    display: flex;
+    margin: auto;
+}
+
+#navbar li{
+    margin: 20px;
+    color: black;
+}
+
+#cardwidget{
+    display: flex;
+    margin-left: 45%;
+}
+#cardwidget img{
+    width: 40px;
+    height: 40px;
+}
