@@ -8,24 +8,35 @@
     font-size: 35px; /* Tamaño del H1 */
     margin-top: 20px; 
     margin-bottom: 20px; 
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 #navbar ul{
     display: flex;
     margin: auto;
+    list-style-type: none;
 }
 
-#navbar li{
+#navbar li a{
+    font-size: 20px;
     margin: 20px;
     color: black;
 }
-
 #cardwidget{
     display: flex;
-    margin-left: 45%;
+    align-items: center;
+    margin-right: 15px;
 }
 #cardwidget img{
     width: 40px;
     height: 40px;
+}
+#cardwidget img:hover{
+    width: 45px;
+    height: 45px;
+}
+
+li:hover {
+    background-color:  #e6d072; /* Cambia el color de fondo al pasar el mouse */
+    font-size: 25px;
 }
