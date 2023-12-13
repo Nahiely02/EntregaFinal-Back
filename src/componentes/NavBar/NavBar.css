@@ -22,16 +22,21 @@
     margin: 20px;
     color: black;
 }
-#cardwidget{
+#cartwidget{
     display: flex;
     align-items: center;
     margin-right: 15px;
+    img{
+        width: 40px;
+        height: 40px;
+    }
 }
-#cardwidget img{
+#cartwidget img{
     width: 40px;
     height: 40px;
 }
-#cardwidget img:hover{
+
+#cartwidget img:hover{
     width: 45px;
     height: 45px;
 }
