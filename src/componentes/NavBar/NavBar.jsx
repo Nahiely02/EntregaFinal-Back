@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget"
-import "./NavBar.css"
+import "./NavBar.scss"
 
 const NavBar = () =>{
     return(

@@ -1,0 +1,36 @@
+#navbar {
+  display: flex;
+  width: 100%;
+  background-color: #f3e18e; /* Fondo del Navbar */
+
+  h1 {
+    color: #343a40; /* Color del H1 */
+    font-size: 35px; /* Tamaño del H1 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+}
+
+#navbar ul {
+  display: flex;
+  margin: auto;
+  list-style-type: none;
+
+  li a {
+    font-size: 20px;
+    margin: 20px;
+    color: black;
+  }
+}
+
+#cartwidget {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+li:hover {
+  background-color: #e6d072; /* Cambia el color de fondo al pasar el mouse */
+  border-radius: 5px;
+}

@@ -1,7 +1,9 @@
+import { FaCartArrowDown } from "react-icons/fa";
+
 const CartWidget = () => {
     return (
     <div id ="cartwidget">
-        <img src="/img/icon-cart.png" alt="icono de carrito" />
+        <FaCartArrowDown size={30} />
         <p>1</p>    
     </div>
     )
