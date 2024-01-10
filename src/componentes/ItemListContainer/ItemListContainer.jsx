@@ -2,19 +2,19 @@ import { useState, useEffect } from "react";
 import "./ItemListContainer.scss";
 import obtenerProductos from "../utilidades/data";
 import ItemList from "../ItemList/ItemList";
-import useLoading  from "../../hooks/useLoading";
+import {MoonLoader} from "react-spinners"
 import { useParams } from "react-router-dom";
 
 
 const ItemListContainer = ({ welcome }) => {
     const [productos, setProductos] = useState([]);
-    const {loading, mostrarLoading, ocultarLoading, loadingScreen} = useLoading ()
+    const [loading, mostrarLoading] = useState (true);
     const {categoria} =useParams()
 
     console.log(categoria)
 
     useEffect(() => {
-        mostrarLoading ();
+        mostrarLoading(true)
 
         obtenerProductos()
             .then((respuesta) => {
@@ -30,14 +30,17 @@ const ItemListContainer = ({ welcome }) => {
                 console.log(error);
             })
             .finally(() => {
-                ocultarLoading();
+                mostrarLoading(false);
             });
     }, [categoria]);
 
     return (
         <>
             {loading ? ( /* si loading=true muestra nuestra pantalla de carga */
-                loadingScreen
+            <span className="loading">
+                <MoonLoader color="#159c60" />
+            </span>
+                
             ) : (
                 <div className ="ItemListContainer">
                     <p>{welcome}</p>
