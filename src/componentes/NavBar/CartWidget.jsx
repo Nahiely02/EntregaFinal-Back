@@ -1,9 +1,9 @@
-import { FaCartArrowDown } from "react-icons/fa";
+import { IoBagHandle } from "react-icons/io5";
 
 const CartWidget = () => {
     return (
-    <div id ="cartwidget">
-        <FaCartArrowDown size={30} />
+    <div className ="cartwidget">
+        <IoBagHandle size={30} />
         <p>1</p>    
     </div>
     )

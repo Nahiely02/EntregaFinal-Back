@@ -1,12 +1,29 @@
-.card{
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin: 10px 20px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-}
-.image-card{
-    height: 250px;
+.card {
+  width: 250px;
+  border-radius: 4px;
+  margin: 10px 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+
+  & .image-card { /*utilizamos & para hacer referencia al selector padre*/
+    padding: 30px;
+    max-width: 250px; /* o el tamaño que desees */
+    max-height: 400px; /* o el tamaño que desees */
+  }
+
+  & .titulo {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+
+  & .precio {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
