@@ -11,8 +11,6 @@ const ItemListContainer = ({ welcome }) => {
     const [loading, mostrarLoading] = useState (true);
     const {categoria} =useParams()
 
-    console.log(categoria)
-
     useEffect(() => {
         mostrarLoading(true)
 
@@ -24,7 +22,6 @@ const ItemListContainer = ({ welcome }) => {
                 }else{
                     setProductos(respuesta);
                 }
-                console.log(respuesta);
             })
             .catch((error) => {
                 console.log(error);
