@@ -1,9 +1,55 @@
-.img-cart{
-    width: 100px;
+.container-cart{
+    padding: 15px;
+    background-color: rgb(243, 241, 241);
 }
+
 .ul-cart{
-    display: flex;
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    gap: 20px;
+    justify-content: center;
     .li-cart{
-        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: #fff;
+        list-style-type: none;
+        margin: 0 20px;
+        padding: 5px;
+        border-radius: 5px;
+        border: solid thin rgb(9, 63, 9);
+        button{
+            width: auto;
+            display: inline-block;
+        }
+        .img-cart{
+            width: 100px;
+        }
     }
+}
+.cart-vacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-link{
+    display: flex;
+    margin-top: 10px;
+    width: 250px;
+    color: #ffffff; // Color del texto
+    background-color: #808080; // Color de fondo gris
+    padding: 10px 15px; // Ajusta el relleno según sea necesario
+    text-decoration: none; // Quita la subrayado predeterminado
+    justify-content: center;
+    border-radius: 5px; // Bordes redondeados para que parezca un botón
+}
+
+.btn-link:hover{
+    background-color: #cbf7bc;
+    color: black;
 }

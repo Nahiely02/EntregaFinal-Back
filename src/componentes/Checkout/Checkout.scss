@@ -1,0 +1,52 @@
+.checkout{
+    margin-top: 15px;
+    font-weight: bold;
+    div{
+        margin-top: 10px;
+    }
+    button{
+        margin: 0 auto;
+        display: block;
+        margin-top: 25px;
+        background-color: rgb(212, 212, 212);
+        border-radius: 4px;
+        color: black;
+    }
+}
+
+button:hover{
+    background-color: #cbf7bc;
+}
+
+.orden{
+    max-width: 400px;
+    margin: 25px auto;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    h2{
+        text-decoration:underline;
+        margin: 0;
+        font-size: 1.5em;
+    }
+    p{
+        margin: 10px ;
+        font-weight: bold;
+    }
+
+    .boton-orden{
+    color: #ffffff; // Color del texto
+    background-color: #808080; // Color de fondo gris
+    padding: 5px 10px; // Ajusta el relleno según sea necesario
+    text-decoration: none; // Quita la subrayado predeterminado
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    }
+}
+
+.boton-orden:hover{
+    background-color: #cbf7bc;  // Color del texto
+    color:  black;
+}

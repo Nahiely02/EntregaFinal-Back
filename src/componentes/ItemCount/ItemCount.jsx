@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./ItemCount.scss";
 
 const ItemCount = ({ stock, setCart }) => {

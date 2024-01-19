@@ -1,13 +1,37 @@
 .item-detail {
   display: flex;
+  justify-content: center;
   padding: 5% 10%;
-  .img {
-    width: 50%;
-  }
   .text {
     width: 50%;
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
+    h2{
+      font-weight: bold;
+    }
+    .precio{
+      color: rgb(3, 58, 3);
+      font-size:20px ;
+    }
   }
+
+  .btn-cart{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: rgb(192, 192, 192);
+    border-radius: 4px;
+    color: black;
+  }
+}
+
+.img {
+  width: auto;
+}
+
+.btn-cart:hover{
+  background-color: black;
+  color: rgb(192, 192, 192);;
 }

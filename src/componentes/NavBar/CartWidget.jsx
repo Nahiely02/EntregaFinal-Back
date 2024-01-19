@@ -1,15 +1,15 @@
 import { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
 import { IoBagHandle } from "react-icons/io5";
+import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-    const {totalCantidad} = useContext (CartContext)
+    const {cart, totalCantidad} = useContext (CartContext)
 
     return (
     <Link to="/Cart" className ="cartwidget">
         <IoBagHandle size={30} color="black" />
-        <p>{totalCantidad()}</p>    
+        {cart.length !== 0 && <p>{totalCantidad()}</p>}
     </Link>
     )
 }

@@ -1,6 +1,7 @@
-import "./Item.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
+import "./Item.scss";
 
 export const Item = ({producto}) => {
   const [zoom, setZoom] = useState(false)
