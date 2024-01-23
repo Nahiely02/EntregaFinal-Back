@@ -10,10 +10,10 @@
   -webkit-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
 
-  & .image-card { /*utilizamos & para hacer referencia al selector padre*/
+  & .image-card { 
     padding: 30px;
-    max-width: 250px; /* o el tamaño que desees */
-    max-height: 400px; /* o el tamaño que desees */
+    max-width: 250px; 
+    max-height: 400px; 
   }
 
   & .titulo {
