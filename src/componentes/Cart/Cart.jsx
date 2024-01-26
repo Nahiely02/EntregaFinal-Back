@@ -23,6 +23,7 @@ const Cart = () => {
           <li className="li-cart" key={producto.id}>
             <img className="img-cart" src={producto.imagen} alt={producto.nombre} />
             <p>{producto.nombre}</p>
+            <p>Precio unit. : ${producto.precio}</p>
             <p>Cantidad: {producto.cantidad}</p>
             <button className="btn-link" onClick={() => borrarProducto(producto.id)}>Eliminar producto</button>
           </li>
